@@ -1,0 +1,703 @@
+html, body{
+    height: 100%;
+}
+
+/*Корзина*/
+.cart {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #00f549;
+    transition: 0.1s;
+    cursor: pointer;
+    position: fixed; /* Фиксированное расположение */
+    top: 400px; /* в правом верхнем углу */
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    z-index: 1000;
+
+  }
+  
+  /* Увеличиваем кнопку при наведении на нее */
+  .cart:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Стилизуем счетчик товаров */
+  .cart__num {
+    display: flex;
+    background-color: #d62240;
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  #cart-title{
+    margin-right: 1px;
+    margin-bottom: 0;
+  }
+/*========================*/
+body{
+    min-width: 320px;
+}
+.wrapper{
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+main.main{
+    flex: 1 1 auto;
+}
+main{
+    margin:0;
+}
+
+/*===========HEADER===========*/
+.navbar{
+    background-color: #004700;
+}
+.navbar-brand{
+    font-weight: bold;
+    color: red;
+    font-size: 35px;
+}
+.row{
+    --bs-gutter-x: 0;
+}
+.nav-item{
+    display: flex;
+    font-size:18px;
+    margin-left: 5px;
+    width: fit-content;
+    padding: 0;
+    margin:0;
+    
+
+}
+.nav-link{
+    margin: 0;
+    display:flex;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color:#00d80a;
+
+}
+
+/*===========MAIN===========*/
+.carousel{
+    width: 100%;
+}
+.carousel-content{
+    position: absolute;
+    bottom: 0;
+  z-index: 20;
+  right: 1%;
+  color: black;
+  background-color: gray;
+  padding: 0.3%;
+  border-radius: 1rem;
+}
+p{
+    margin-bottom: 0;
+}
+#carouselka{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#categor-title{
+    color:black;
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.card-text{
+    text-align: center;
+}
+.card{
+    outline: none;
+    border: none;
+    width: 15rem;
+}
+.button-container{
+    display:flex;
+    justify-content: center;
+}
+#card-id{
+    width: 277px;
+}
+.btnA{
+    display: flex;
+    background-color: green;
+    color:white;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    width: 80%;
+    justify-content: center;
+}
+.btnA:hover{
+    display: flex;
+    transition: 
+    background-color 0.5s;
+    background-color: rgb(0, 211, 0);
+    color:white;
+    justify-content: center;
+}
+#catalog{
+    background-color: #004700;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+#cat{
+    font-size: 30px;
+}
+#categ{
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+}
+#product-price{
+    display: flex;
+    font-size: 18px;
+    color:#00f549;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#pagin{
+    display: flex;
+    justify-content: center;
+
+}
+#current-page{
+    background-color: rgb(212, 212, 212);
+}
+.page-link{
+    color:#03d642;
+    font-weight: bold;
+    border-color: #a5a5a5;
+    border-width: 1px;
+    border-radius: 10%;
+}
+.page-link:hover{
+    color:#007e26;
+    font-weight: bold;
+}
+#subtitle{
+    color: #004700;
+    text-align: center;
+}
+#text{
+    color:black;
+    font-weight: 400;
+}
+#text1{
+    color:black;
+    font-weight: 700;
+    font-size: 25px;
+}
+li{
+    font-size:  18px;
+}
+.btn{
+    border-style: solid;
+    border-color: #a5a5a5;
+}
+/*===========FOOTER===========*/
+.footer{
+    background-color: rgb(0, 71, 0);
+}
+#footer-link, #email-link, #inf-adr{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+h5{
+    color:white;
+}
+.col{
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 25px;
+}
+.container-fluid{
+    height: fit-content;
+}
+#fav{
+    margin-top: 5px;
+}
+
+
+
+
+
+.btn-up {
+    position: fixed;
+    background-color: #f57c00;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    opacity: 1;
+    transform: translateY(0);
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  .btn-up_hiding {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  .btn-up-icon {
+    width: 50px;
+    height: 50px;
+    fill: currentcolor;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #ef0000;
+    }
+  }
+
+
+  /*-----------------------------PRODUCT----------------------------------*/
+  #page-prod.col{
+    display: flex;
+    justify-content: center;
+  }
+  #imagecontainer img{
+    width: 80%;
+  }
+  #info{
+    margin-bottom: 30px;
+  }
+  #info h2{
+    font-weight: bold;
+    size:30px;
+    margin-bottom: 30px;
+    color:#0a472e;
+  }
+  #info h4{
+    color: rgb(0, 211, 0);
+    size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  #colvo{
+    border-radius: 3rem;
+    font-size: 16px;
+    height: 3rem;
+    width: 20%;
+    border-radius: 30px;
+    padding: .75em 20px .75em 1.5em;
+    text-align: left;
+    color: #0a472e;
+    border: 1px solid;
+    border-color: #ebebeb;
+    margin-right: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /*бОт*/
+  .chat-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+    }
+    
+    .chat-header {
+    background-color:#004700;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+    
+    .close-button, .open-button {
+    cursor: pointer;
+    }
+    
+    .chat-messages {
+    max-height: 200px;
+    min-height: 100px;
+    overflow-y: scroll;
+    padding: 10px;
+    }
+    
+    .user-message {
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+    }
+    
+    .send-button {
+    padding: 5px 10px;
+    background-color:#007e26;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    }
+    
+    .open-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    }
+
+  .addbutton{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    white-space: nowrap;
+    max-width: 200px;
+    border-radius: 30px;
+    background-color: #00d80a;
+    border: none;
+    color: white;
+  }
+  .addbutton:hover{
+    background-color: #a8b324;
+  }
+  
+#info h5{
+    color:black;
+    margin-top: 200px;
+}
+#openChatButton{
+    
+}
+.fa-brands {
+    font-size: 2em;
+}
+#b1{
+    position: absolute;
+    background-color: #00d80a;
+    right: 100px;
+    bottom: -20px;
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border:none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#b1:hover{
+    background-color: #00a108;
+    transition: 0.5s;
+    color:white;
+}
+
+@media screen and (min-width:100px) and (max-width:1000px) {
+.wrapper{
+    width: 100%;
+}
+.breadcrumb-item{
+    font-size: 40px;
+}
+#categor-title{
+    width: 100%;
+    
+}
+.card{
+    width: 0;
+    width: fit-content;
+}
+.card-img-top{
+    width: 30rem;
+    height: 20rem;
+}
+.col{
+    width: fit-content;
+    margin: auto;
+}
+.row{
+    display: grid;
+    
+}
+.card-body{
+    display: block;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.categoria{
+    font-size: 45px;
+    text-align: center;
+}
+#subtitle{
+    font-size: 75px;
+}
+.col{
+    font-size: 75px;
+    margin-bottom: 50px;
+}
+#inf-adr, #email-link{
+    font-size: 40px;
+    text-align: center;
+}
+#footer-link{
+    font-size: 40px;
+    text-align: center;
+}
+#foot h5{
+    font-size:50px;
+    text-align: center;
+    
+}
+#fav{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+.fa-brands {
+    font-size: 1em;
+}
+#favs{
+    display:flex;
+}
+.btn-up {
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+
+  }
+  header{
+    height: 150px;
+    z-index: 1000;
+  }
+  #hed{
+    height: 150px;
+  }
+  .navbar-toggler{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(21, 255, 0);
+  }
+  .navbar-toggler-icon{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(21, 255, 0);
+  }
+  .container-fluid{
+    height: fit-content; }
+    .navbar-brand{
+        font-size: 100px;
+    }
+    .form-control{
+        font-size: 40px;
+        width:650px;
+    }
+    .btn{
+        font-size: 50px;
+        color:white;
+    }
+    .nav-link{
+        font-size: 50px;
+    }
+    .cart__num{
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    #text{
+        font-size: 50px;
+    }
+    #text1{
+        font-size: 55px;
+    }
+    li{
+        font-size: 50px;
+    }
+    #catalog{
+        width: 100%;
+        height: fit-content;
+    }
+    #cat{
+        font-size: 75px;
+        margin-bottom: 50px;
+    }
+    #categ{
+        font-size: 50px;
+        
+    }
+    p{
+        margin-bottom: 50px;
+    }
+    #card-id img{
+        width: 35rem;
+        height: 35rem;
+    }
+    .card-body h5{
+        font-size: 70px;
+        width: fit-content;
+    }
+    .card-body{
+        width: fit-content;
+    }
+    .btnA{
+        width: 35rem;
+        height: 5rem;
+        font-size: 50px;
+    }
+    #product-price{
+        font-size: 50px;
+    }
+    .page-link{
+        font-size: 60px;
+        width: 3rem;
+    }
+    .btn{
+        font-size: 60px;
+        color:black
+    }
+    .page-item{
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    #imagecontainer{
+        display: flex;
+        justify-content: center;
+    }
+    #info{
+        display: grid;
+        width: fit-content;
+        position: inherit;
+    }
+    #title, #cost{
+        text-align: center;
+    }
+    #inf{
+        display: grid;
+        width: 100%;
+    }
+    
+    #b1{
+        width: 30rem;
+        height: 5rem;
+        font-size: 50px;
+    }
+    .chat-messages {
+        max-height: 1500px;
+        min-height: 800px;
+    }
+    .chat-container{
+        width: 650px;
+    }
+    .chat-header {
+        background-color:#004700;
+        color: #fff;
+        padding: 10px;
+        text-align: right;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        }
+        
+        .close-button, .open-button {
+        cursor: pointer;
+        font-size: 50px;
+        }
+    
+        .chat-messages p{
+            font-size: 50px;
+        }
+        .options button{
+            font-size: 50px;
+        }
+        .user-message {
+        width: 80%;
+        padding: 5px;
+        margin: 10px;
+        font-size: 40px;
+        }
+        
+        .send-button {
+        font-size: 50px;
+
+        }
+        
+        .open-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        }
+    
+      .addbutton{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        white-space: nowrap;
+        max-width: 1500px;
+        border-radius: 30px;
+        background-color: #00d80a;
+        border: none;
+        color: white;
+      }
+      .addbutton:hover{
+        background-color: #a8b324;
+      }
+      .send-button{
+
+      }
+      
+    
+}

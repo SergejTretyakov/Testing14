@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Товар</title>
+    <meta name="description" content="Описание страницы" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css" type="text/css" >
+    
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Переключатель навигации">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div class="col-md-4">
+                <a class="navbar-brand" href="index.html">FLAMEFUSION</a>
+              </div>
+              <div class="col-md-4">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+              </form>
+            </div>
+              <div class="col-md-4">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="katalog1.html">Каталог</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" id="cart-title" href="cart.html">Корзина</a></li>
+                    <li class="nav-item"><div class="cart__num" id="cart_num">0</div></li>
+                </ul>
+            </div>
+              
+            </div>
+          </div> <!--container fluid-->
+          </div> <!--row-->
+        </nav>
+    </header>
+    <main class="main">
+      <ol class="breadcrumb" id="brcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+      </ol>
+      <!--Тело страницы-->
+      <div class="container-fluid row" id="page-prod">
+        <div class="container col" id="imagecontainer">
+          <img src="resources/catalog/mangal23255full.jpg" alt="image" id="image">
+        </div>
+        <div class="container col" id="info">
+          <div class="container row mb-3" "></div>
+          <h2 id="title">Мангал сборный 2*320*500</h2>
+          <h4 id="cost">1365 руб</h4>
+          <div class="container row "id="inf">
+            <input type="number" id="colvo" class="input-text" value="1" size="4" min="1" step="1" inputmode="numeric" autocomplete="off">
+            <button type="submit" name="add-to-cart" value="2695" class="addbutton alt" id="add">В корзину</button>
+          </div>
+          <h5>Описание товара............................................................................</h5>
+        </g>
+        </div>
+      </div>
+      <!--Тело страницы-->
+      <a id="openChatButton" class="open-button"><button id="b1">Задайте вопрос</button></i></a>
+          <div id="chatContainer" class="chat-container">
+          <div id="chatHeader" class="chat-header">
+          <span id="closeChatButton" class="close-button">Закрыть</span>
+              </div>
+            <div id="chatMessages" class="chat-messages">
+                  <!--сообщения бота и пользователя -->
+                </div>
+                  <input type="text" id="userMessage" class="user-message" placeholder="Введите сообщение...">
+          <button id="sendMessageButton" class="send-button">Отправить</button>
+        </div>
+      
+      <script>document.addEventListener('DOMContentLoaded', function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        updateCounter();
+        changeInfo(id);
+      });</script>
+      <div class="btn-up btn-up_hide"></div>
+    </main>
+    <footer class="footer p-3">
+      <div class="container-fluid">
+      <div class="row" id="foot">
+        <div class="col">
+          <h5>Адрес</h5>
+          <div class="row row-cols-auto" id="inf-adr">156011, Костромская область, г. Кострома, пр. Студенческий, 2</div>
+          <div class="row"><a class="email-link" id="email-link" href="#">example@mail.ru</a></div>
+        </div>
+        <div class="col" id="information">
+          <h5>Информация</h5>
+          <div class="row"><a class="email-link" id="footer-link" href="#">О нас</a></div>
+          <div class="row"><a class="email-link" id="footer-link" href="#">Договор оферты</a></div>
+          <div class="row"><a class="email-link" id="footer-link" href="#">Оплата и доставка</a></div>
+          <div class="row"><a class="email-link" id="footer-link" href="#">Интернет-магазин</a></div>
+          <div class="row"><a class="email-link" id="footer-link" href="#">Соцсети:</a></div>
+          <div class="row" id="favs">
+            <div class="col" id="fav"><i class="fa-brands fa-telegram " style="color: #ffffff;"></i></div>
+            <div class="col" id="fav"><i class="fa-brands fa-vk " style="color: #ffffff;"></i></div>
+            <div class="col" id="fav"><i class="fa-brands fa-instagram " style="color: #ffffff;"></i></div>
+          </div>
+       </div>
+        <div class="col">
+         <h5>Аккаунт</h5>
+         <div class="row"><a class="email-link" id="footer-link" href="#">Личный кабинет</a></div>
+         <div class="row"><a class="email-link" id="footer-link" href="#">Моя корзина</a></div>
+       </div>
+       <div class="col">
+          <h5>Популярное</h5>
+         <div class="row"><a class="email-link" id="footer-link" href="#">Шампуры</a></div>
+         <div class="row"><a class="email-link" id="footer-link" href="#">Щипцы</a></div>
+         <div class="row"><a class="email-link" id="footer-link" href="#">Мангалы</a></div>
+          <div class="row"><a class="email-link" id="footer-link" href="#">Фляжки</a></div>
+         <div class="row"><a class="email-link" id="footer-link" href="#">Стопки</a></div>
+       </div>
+      </div>
+    </div>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+    <script src="script/catalog.js"></script>
+    <script src="script/cart.js"></script>
+    <script src="script/navigation.js"></script>
+    <script src="script/product.js"></script>
+    <script src="https://kit.fontawesome.com/e3d472e69d.js" crossorigin="anonymous"></script>
+  </body>
+</html>
